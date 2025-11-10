@@ -192,8 +192,6 @@ bool RuckusServoWheels::setConfig(String config, bool save) {
 	}
 	
 	if (save) {
-		// Save space by not storing static limits
-		doc["limits"] = "";
 		return saveConfig(config_path, config);
 	}
 	return true;
