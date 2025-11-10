@@ -38,10 +38,10 @@ class RuckusServoWheels : public RoboRuckusMovement {
 			int frontRightPin, frontLeftPin, rearRightPin, rearLeftPin;
 
 			/// @brief Forward speeds of wheels
-			int frontRightForward = 165, frontLeftForward = 15, rearRightForward = 165, rearLeftForward = 15;
+			int frontRightForward = 15, frontLeftForward = 165, rearRightForward = 15, rearLeftForward = 165;
 
 			/// @brief Backward speeds of wheels
-			int frontRightBackward = 15, frontLeftBackward = 165, rearRightBackward = 15, rearLeftBackward = 165;
+			int frontRightBackward = 165, frontLeftBackward = 15, rearRightBackward = 165, rearLeftBackward = 15;
 
 			/// @brief Wheel zero positions
 			int frontRightZero = 90, frontLeftZero = 90, rearRightZero = 90, rearLeftZero = 90;
