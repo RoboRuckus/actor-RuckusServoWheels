@@ -6,7 +6,7 @@
 /// @param LeftPin The pin used by the left wheel
 /// @param ConfigFile The name of the config file
 RuckusServoWheels::RuckusServoWheels(String Name, int RightPin, int LeftPin, String ConfigFile) : RoboRuckusMovement(Name) {
-	config_path = "/settings/sen/" + ConfigFile;
+	config_path = "/settings/act/" + ConfigFile;
 	wheel_config.frontLeftPin = LeftPin;
 	wheel_config.frontRightPin = RightPin;
 }
@@ -19,7 +19,7 @@ RuckusServoWheels::RuckusServoWheels(String Name, int RightPin, int LeftPin, Str
 /// @param LeftRearPin The pin used by the rear left wheel
 /// @param ConfigFile The name of the config file
 RuckusServoWheels::RuckusServoWheels(String Name, int RightFrontPin, int LeftFrontPin, int RightRearPin, int LeftRearPin, String ConfigFile) : RoboRuckusMovement(Name) {
-	config_path = "/settings/sen/" + ConfigFile;
+	config_path = "/settings/act/" + ConfigFile;
 	wheel_config.frontLeftPin = LeftFrontPin;
 	wheel_config.frontRightPin = RightFrontPin;
 	wheel_config.rearLeftPin = LeftRearPin;

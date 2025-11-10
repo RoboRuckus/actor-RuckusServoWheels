@@ -13,7 +13,7 @@
 #include <RoboRuckusMovement.h>
 #include <ESP32Servo.h>
 
-/// @brief Class describing a RoboRuckus LED matrix display
+/// @brief Class for RoboRuckus bot movement via CR servos
 class RuckusServoWheels : public RoboRuckusMovement {
 	public:
 		RuckusServoWheels(String Name, int RightPin, int LeftPin, String ConfigFile = "RuckusServoWheels.json");
