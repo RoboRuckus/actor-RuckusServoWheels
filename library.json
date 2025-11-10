@@ -1,0 +1,93 @@
+{
+	"name": "actor-RuckusServoWheels",
+	"version": "1.0.0",
+	"description": "Provides movement for a robot via CR servo wheels",
+	"keywords": "Fabrica-IO, actor, movement, servo, roboruckus, display, led",
+	"repository":
+	{
+	  "type": "git",
+	  "url": "https://github.com/RoboRuckus/actor-RuckusServoWheels.git"
+	},
+	"authors":
+	[
+	  {
+		"name": "Sam Groveman",
+		"email": "SamGroveman@outlook.com",
+		"url": "https://RoboRuckus.com"
+	  }
+	],
+	"dependencies": {
+		"RoboRuckusMovement": "https://github.com/RoboRuckus/util-RoboRuckusMovement",
+		"ESP32Servo": "madhephaestus/ESP32Servo@^3.0.9"
+	  },
+	"license": "GPLv3",
+	"homepage": "https://RoboRuckus.com",
+	"frameworks": "arduino",
+	"platforms": "*",
+	"fabricaio" : {
+		"name": "RuckusServos",
+		"type": 1,
+		"category": "movement",
+		"libname": "RuckusServoWheels",
+		"includes": ["RuckusServoWheels"],
+		"description": "Provides movement for a robot via CR servo wheels",
+		"constructor":
+		[
+			[
+				{
+					"name": "RightPin",
+					"type": "int",
+					"description": "The pin for the right wheel",
+					"default": ""
+				},
+				{
+				
+					"name": "LeftPin",
+					"type": "int",
+					"description": "The pin for the left wheel",
+					"default": ""
+				},
+				{
+					"name": "configFile",
+					"type": "String",
+					"description": "The name of the config file",
+					"default": "RuckusServoWheels.json"
+				}
+			],
+			[
+				{
+					"name": "RightFrontPin",
+					"type": "int",
+					"description": "The pin for the front right wheel",
+					"default": ""
+				},
+				{
+				
+					"name": "LeftFrontPin",
+					"type": "int",
+					"description": "The pin for the front left wheel",
+					"default": ""
+				},
+				{
+					"name": "RightRearPin",
+					"type": "int",
+					"description": "The pin for the rear right wheel",
+					"default": ""
+				},
+				{
+				
+					"name": "LeftRearPin",
+					"type": "int",
+					"description": "The pin for the rear left wheel",
+					"default": ""
+				},
+				{
+					"name": "configFile",
+					"type": "String",
+					"description": "The name of the config file",
+					"default": "RuckusServoWheels.json"
+				}
+			]
+		]
+	}
+  }
